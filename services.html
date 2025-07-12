@@ -14,20 +14,28 @@
   <meta charset="UTF-8">
   <title>Services - Trusted Link</title>
   <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore our IT support, cybersecurity, cloud, and network services for small businesses across the Northwest Florida.">
 </head>
 <body>
   <header>
-    <img src="logo_with_text.svg" alt="Trusted Link Logo" class="logo">
-    <nav>
+  <div class="nav-container">
+    <a href="index.html" class="logo-link">
+      <img src="logo_left.png" alt="Trusted Link Logo" class="logo">
+    </a>
+    <button class="hamburger" onclick="toggleMenu()"><kbd>&#9776;</kbd></button>
+    <nav id="mobileMenu" class="nav-links">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
       <a href="contact.html">Contact</a>
     </nav>
-  </header>
+  </div>
+</header>
+
   <main>
   <h1>Our Services</h1>
-  <p>At Trusted Link, we provide small businesses on the Emerald Coast with enterprise-quality IT services — without the complexity or inflated cost.</p>
+  <p>At Trusted Link, we provide small businesses in Northwest Florida with enterprise-quality IT services — without the complexity or inflated cost.</p>
 
   <section class="service-grid">
     <div class="service-card">
@@ -72,5 +80,13 @@
   <footer>
     &copy; 2025 Trusted Link Technical Solutions LLC
   </footer>
+ 
+ <script>
+function toggleMenu() {
+  const menu = document.getElementById('mobileMenu');
+  menu.classList.toggle('show');
+}
+</script>
+
 </body>
 </html>

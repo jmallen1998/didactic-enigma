@@ -14,19 +14,26 @@
   <meta charset="UTF-8">
   <title>Contact - Trusted Link</title>
   <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Learn about Trusted Link Technical Solutions, a veteran-owned IT firm serving Florida small businesses with trusted cybersecurity and cloud services.">
 </head>
 <body>
-  <header>
-    <img src="logo_with_text.svg" alt="Trusted Link Logo" class="logo">
-    <nav>
+ <header>
+  <div class="nav-container">
+    <a href="index.html" class="logo-link">
+      <img src="logo_left.png" alt="Trusted Link Logo" class="logo">
+    </a>
+    <button class="hamburger" onclick="toggleMenu()"><kbd>&#9776;</kbd></button>
+    <nav id="mobileMenu" class="nav-links">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
       <a href="contact.html">Contact</a>
     </nav>
-  </header>
-  <main>
- <main>
+  </div>
+</header>
+
+<main>
   <h1>Contact Us</h1>
   <p>We’d love to hear from you. Whether you have questions about services, need support, or want to schedule a consultation — we're here to help.</p>
 
@@ -71,10 +78,16 @@
 </main>
 
 
-</main>
-
   <footer>
     &copy; 2025 Trusted Link Technical Solutions LLC
   </footer>
+
+  <script>
+function toggleMenu() {
+  const menu = document.getElementById('mobileMenu');
+  menu.classList.toggle('show');
+}
+</script>
+
 </body>
 </html>
